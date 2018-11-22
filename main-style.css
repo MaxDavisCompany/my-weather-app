@@ -1,0 +1,162 @@
+* {
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  margin: 0 auto;
+  text-align: center;
+  font-family: roboto;
+  background: none;
+  /* background-size: cover; */
+  color: #fff;
+  background: #2E5F75;
+}
+
+@media screen and (min-width: 530px) {
+  body {
+    background: url('/flat-wallpaper.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+}
+
+.grid {
+  position: relative;
+  display: grid;
+  grid-template-columns: 1fr;
+  justify-content: center;
+  padding: 310px 0;
+  margin: 0 0;
+  background: #2E5F75;
+}
+
+@media screen and (min-width: 530px) {
+  .grid {
+    padding: 400px 200px;
+    margin: 75px 15%;
+  }
+}
+
+@media screen and (min-width: 800px) {
+  .grid {
+    padding: 400px 200px;
+    margin: 75px 20%;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .grid {
+    padding: 400px 200px;
+    margin: 75px 25%;
+  }
+}
+
+@media screen and (min-width: 1500px) {
+  .grid {
+    padding: 400px 200px;
+    margin: 75px 33%;
+  }
+}
+
+h1 {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 60%;
+  font-size: 4rem;
+  font-weight: 300;
+}
+
+@media screen and (min-width: 530px) {
+  h1 {
+    bottom: 50%;
+  }
+}
+
+#search {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 55px;
+}
+
+@media screen and (min-width: 530px) {
+  #search {
+    bottom: 75px;
+  }
+}
+
+h3 {
+  font-size: 1.4rem;
+  font-weight: 300;
+  border-radius: 10px;
+  padding: 5px 0;
+  background: #5C90A8;
+  color: #fff;
+  opacity: 1;
+  transition: all .3s ease-in-out;
+}
+
+@media screen and (min-width: 530px) {
+  h3:hover {
+    cursor: pointer;
+    opacity: .7;
+  }
+}
+
+input {
+  padding: 5px;
+  font-size: 1.1rem;
+  margin-bottom: 15px;
+}
+
+.weatherCityName {
+  position: absolute;
+  font-size: 4rem;
+  font-weight: 300;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 40px;
+}
+
+.weatherCountry {
+  position: absolute;
+  font-size: 1.4rem;
+  font-weight: 300;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 10px;
+}
+
+.weatherTemp {
+  position: absolute;
+  font-size: 8rem;
+  font-weight: 100;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 150px;
+}
+
+@media screen and (min-width: 530px) {
+  .weatherTemp {
+    font-size: 11rem;
+    top: 200px;
+  }
+}
+
+.weatherDescription {
+  position: absolute;
+  font-size: 2rem;
+  font-weight: 300;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 200px;
+}
+
+@media screen and (min-width: 530px) {
+  .weatherDescription {
+    bottom: 300px;
+  }
+}
