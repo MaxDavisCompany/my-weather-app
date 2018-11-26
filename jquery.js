@@ -3,7 +3,7 @@ function getWeather() {
   $('.weatherResponse').html('');
   var cityName = $('#cityName').val();
   var apiCall =
-  'http://api.openweathermap.org/data/2.5/weather?q=' + cityName +  '&APPID=af57a5a7a1791d91d543776cc69d920b&units=imperial';
+  'https://api.openweathermap.org/data/2.5/weather?q=' + cityName +  '&APPID=af57a5a7a1791d91d543776cc69d920b&units=imperial';
 
   $.getJSON(apiCall, weatherCallback);
   function weatherCallback(weatherData) {
